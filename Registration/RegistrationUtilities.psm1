@@ -66,7 +66,7 @@ $contextDetails = @{
 
 if (-not($currentContext.Subscription))
 {
-    Write-Verbose "Current Azure context:`r`n$(ConvertTo-Json $azureContextDetails)"
+    Write-Verbose "Current Azure context:`r`n$(ConvertTo-Json $ContextDetails)"
     Throw "Current Azure context is not currently set. Please call Login-AzureRmAccount to set the Powershell context to Azure Stack service administrator."
 }
 
